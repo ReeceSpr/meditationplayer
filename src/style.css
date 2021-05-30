@@ -1,11 +1,99 @@
-h1, p {
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+h1,
+p {
   font-family: Lato;
+  color: white;
 }
 
-#Player{
-  background-image: "https://www.enwallpaper.com/wp-content/uploads/2021/02/teyeuyy83yn51-scaled.jpg";
+#Player {
+  background-image: url('https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/background-1.jpg?raw=true');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  width: 110vw;
+  margin: 0;
 }
 
-#Controls{
-  background-color: blue;
+button {
+  width: 4vw;
+  height: 4vw;
+  margin: 1vh;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+#Controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh;
+}
+
+#LeftButtons {
+  width: 50vw;
+}
+
+#LeftButtons > button {
+  display: block;
+}
+
+#VolumeButtons {
+  width: 15vw;
+  height: 15vh;
+  margin-left: 37vw;
+  margin-right: 0;
+  margin-bottom: 1vh;
+}
+
+#SongDetails {
+  font-size: 40px;
+}
+
+#Rating {
+  width: 15vw;
+  margin-left: 44vw;
+  margin-right: 0;
+}
+#Search {
+  background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/Search.png?raw=true);
+}
+
+#Upload {
+  background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/Upload.png?raw=true);
+}
+
+#Website {
+  background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/Back%20To%20Landing.png?raw=true);
+}
+
+#PreviousSong {
+  background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/Back.png?raw=true);
+}
+
+#NextSong {
+  background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/Skip.png?raw=true);
+}
+
+#VolUp {
+  background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/VolUp.png?raw=true);
+}
+
+#VolDown {
+  background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/VolDown.png?raw=true);
+}
+
+#Rating {
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  width: 40px;
+  height: 240px;
+  background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/Stars.png?raw=true);
 }
