@@ -19,12 +19,14 @@ export default function App() {
         </div>
 
         <div id="SongDetails">
-          <h1>Song Name</h1>
-          <p>Artist</p>
+          <h1>The Wind</h1>
+          <p>Focus</p>
         </div>
 
         <div id="Rating" />
       </div>
     </div>
   );
+
 }
+

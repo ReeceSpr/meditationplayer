@@ -13,12 +13,35 @@ p {
   color: white;
 }
 
-#Player {
+#Song1Bg,
+.Playing {
   background-image: url('https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/background-1.jpg?raw=true');
+}
+
+#Song1Bg,
+.Paused {
+  background-image: linear-gradient(black, black),
+    url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/background-1.png?raw=true);
+  background-blend-mode: saturation;
+}
+
+#Song2Bg,
+.Playing {
+  background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/background-2.png?raw=true);
+}
+
+#Song2Bg,
+.Paused {
+  background-image: linear-gradient(black, black),
+    url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/background-2.png?raw=true);
+}
+
+.Playing,
+.Paused {
   background-repeat: no-repeat;
   background-position: center;
-  height: 90vh;
-  width: 110vw;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
 }
 
@@ -37,7 +60,7 @@ button {
 }
 
 #LeftButtons {
-  width: 50vw;
+  width: 15vw;
 }
 
 #LeftButtons > button {
@@ -45,14 +68,14 @@ button {
 }
 
 #VolumeButtons {
-  width: 15vw;
-  height: 15vh;
-  margin-left: 37vw;
+  margin-left: 39vw;
   margin-right: 0;
   margin-bottom: 1vh;
 }
 
 #SongDetails {
+  padding: 12px;
+  padding-top: 340px;
   font-size: 40px;
 }
 
@@ -97,3 +120,9 @@ button {
   height: 240px;
   background-image: url(https://github.com/ReeceSpr/meditationplayer/blob/master/Assets/Stars.png?raw=true);
 }
+/*
+#LeftButtons,
+#VolumeButtons,
+#Rating {
+  opacity: 0;
+}*/
